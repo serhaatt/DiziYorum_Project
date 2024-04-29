@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlogDiziDbModelStoreContainer" CdmEntityContainer="BlogDiziDbEntities">
+    <EntitySetMapping Name="TblBlog">
+      <EntityTypeMapping TypeName="BlogDiziDbModel.TblBlog">
+        <MappingFragment StoreEntitySet="TblBlog">
+          <ScalarProperty Name="BlogId" ColumnName="BlogId" />
+          <ScalarProperty Name="BlogBaslik" ColumnName="BlogBaslik" />
+          <ScalarProperty Name="BlogIcerik" ColumnName="BlogIcerik" />
+          <ScalarProperty Name="BlogTarih" ColumnName="BlogTarih" />
+          <ScalarProperty Name="BlogGorsel" ColumnName="BlogGorsel" />
+          <ScalarProperty Name="BlogTur" ColumnName="BlogTur" />
+          <ScalarProperty Name="BlogKategori" ColumnName="BlogKategori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblHakkımızda">
+      <EntityTypeMapping TypeName="BlogDiziDbModel.TblHakkımızda">
+        <MappingFragment StoreEntitySet="TblHakkımızda">
+          <ScalarProperty Name="HakkımızdaId" ColumnName="HakkımızdaId" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblIletisim">
+      <EntityTypeMapping TypeName="BlogDiziDbModel.TblIletisim">
+        <MappingFragment StoreEntitySet="TblIletisim">
+          <ScalarProperty Name="MesajId" ColumnName="MesajId" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Konu" ColumnName="Konu" />
+          <ScalarProperty Name="MesajIcerik" ColumnName="MesajIcerik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblKategori">
+      <EntityTypeMapping TypeName="BlogDiziDbModel.TblKategori">
+        <MappingFragment StoreEntitySet="TblKategori">
+          <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+          <ScalarProperty Name="KategoriAd" ColumnName="KategoriAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblTur">
+      <EntityTypeMapping TypeName="BlogDiziDbModel.TblTur">
+        <MappingFragment StoreEntitySet="TblTur">
+          <ScalarProperty Name="TurId" ColumnName="TurId" />
+          <ScalarProperty Name="TurAd" ColumnName="TurAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblYorum">
+      <EntityTypeMapping TypeName="BlogDiziDbModel.TblYorum">
+        <MappingFragment StoreEntitySet="TblYorum">
+          <ScalarProperty Name="YorumId" ColumnName="YorumId" />
+          <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="YorumIcerik" ColumnName="YorumIcerik" />
+          <ScalarProperty Name="YorumBlog" ColumnName="YorumBlog" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblAdmin">
+      <EntityTypeMapping TypeName="BlogDiziDbModel.TblAdmin">
+        <MappingFragment StoreEntitySet="TblAdmin">
+          <ScalarProperty Name="Şifre" ColumnName="Şifre" />
+          <ScalarProperty Name="Kullanıcı" ColumnName="Kullanıcı" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
